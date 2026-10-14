@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>پکیج‌یار پرند | تعمیر و سرویس پکیج</title>
+  <meta name="description" content="خدمات تعمیر و سرویس پکیج در پرند. برای هماهنگی خدمات با پکیج‌یار پرند تماس بگیرید.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      color: #142d4e;
+      background: #fff;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    header {
+      background: #102b4e;
+      color: white;
+      padding: 18px 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ff9f1c;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      font-size: 14px;
+    }
+
+    .call-top {
+      background: #ff9f1c;
+      color: #102b4e;
+      padding: 12px 17px;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: #f1f6fc;
+      padding: 45px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 9px 14px;
+      background: #fff0d7;
+      color: #945500;
+      border-radius: 25px;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 4vw, 43px);
+      line-height: 1.8;
+      margin: 16px 0;
+    }
+
+    h1 span {
+      color: #ed8b00;
+    }
+
+    .hero p {
+      line-height: 2.2;
+      color: #53647b;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 9px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .btn-orange {
+      background: #ff9f1c;
+      color: #142d4e;
+    }
+
+    .btn-navy {
+      background: #102b4e;
+      color: white;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 390px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px #102b4e20;
+    }
+
+    .section {
+      padding: 55px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .section-heading p {
+      color: #64748b;
+      line-height: 2;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .service {
+      background: white;
+      border: 1px solid #e4ebf4;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 7px 24px #102b4e0a;
+    }
+
+    .service img {
+      display: block;
+      width: 100%;
+      height: 205px;
+      object-fit: cover;
+    }
+
+    .service-content {
+      padding: 20px;
+    }
+
+    .service h3 {
+      margin-top: 0;
+    }
+
+    .service p {
+      color: #64748b;
+      font-size: 14px;
+      line-height: 2.1;
+    }
+
+    .more {
+      display: inline-block;
+      color: #b76b00;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .brands {
+      background: #f1f6fc;
+      text-align: center;
+    }
+
+    .brand-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 25px;
+    }
+
+    .brand-item {
+      background: white;
+      border: 1px solid #e1e9f3;
+      padding: 17px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 35px;
+    }
+
+    .why-image {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    .why-list {
+      line-height: 2.5;
+      color: #52647a;
+    }
+
+    .contact {
+      background: #102b4e;
+      color: white;
+      padding: 38px 0;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 27px;
+    }
+
+    .contact p {
+      line-height: 2;
+      color: #e1e9f3;
+    }
+
+    footer {
+      background: #091d35;
+      color: white;
+      padding: 28px 0;
+      text-align: center;
+      line-height: 2.4;
+    }
+
+    footer a {
+      color: #ffb13b;
+    }
+
+    @media (max-width: 760px) {
+      .nav {
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 14px;
+      }
+
+      .hero-grid,
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 30px 0;
+      }
+
+      .hero-image {
+        height: 280px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service img {
+        height: 230px;
+      }
+
+      .why-image {
+        height: 270px;
+      }
+
+      .section {
+        padding: 40px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">
+      <span>🔥</span> پکیج‌یار پرند
+    </a>
+
+    <nav>
+      <a href="#home">صفحه اصلی</a>
+      <a href="#services">خدمات</a>
+      <a href="#brands">برندها</a>
+      <a href="#about">درباره ما</a>
+      <a href="#contact">تماس</a>
+    </nav>
+
+    <a class="call-top" href="tel:+989120636467">
+      ☎ تماس فوری
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="tag">خدمات تعمیر پکیج در پرند</span>
+
+        <h1>
+          تعمیر و سرویس
+          <span>پکیج دیواری</span>
+          در پرند
+        </h1>
+
+        <p>
+          برای عیب‌یابی، سرویس و بررسی مشکلات پکیج
+          خود در پرند تماس بگیرید و برای مراجعه
+          تعمیرکار هماهنگ کنید.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-orange" href="tel:+989120636467">
+            ☎ تماس با تعمیرکار
+          </a>
+
+          <a class="btn btn-navy"
+             href="https://wa.me/989120636467"
+             target="_blank"
+             rel="noopener noreferrer">
+            پیام در واتساپ
+          </a>
+        </div>
+      </div>
+
+      <img
+        class="hero-image"
+       src="images/boiler.jpg"
+        alt="تکنسین خدمات فنی در حال انجام کار"
+        fetchpriority="high">
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-heading">
+        <h2>خدمات پکیج‌یار پرند</h2>
+        <p>خدمات موردنیاز دستگاه خود را انتخاب کنید.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service">
+          <img
+            src="images/nafar.jpg"
+            alt="تکنسین در حال بررسی تجهیزات"
+            loading="lazy">
+
+          <div class="service-content">
+            <h3>تعمیر پکیج</h3>
+            <p>
+              بررسی علت خرابی و ارزیابی مشکلات دستگاه
+              برای مشخص شدن روش تعمیر.
+            </p>
+            <a class="more" href="#contact">هماهنگی خدمات ←</a>
+          </div>
+        </article>
+
+        <article class="service">
+          <img
+            src="images/Package.jpg"
+            alt="تعمیرکار با ابزار فنی"
+            loading="lazy">
+
+          <div class="service-content">
+            <h3>سرویس دوره‌ای</h3>
+            <p>
+              بررسی وضعیت دستگاه و انجام سرویس
+              متناسب با شرایط پکیج.
+            </p>
+            <a class="more" href="#contact">هماهنگی خدمات ←</a>
+          </div>
+        </article>
+
+        <article class="service">
+          <img
+            src="images/nafar2.jpg"
+            alt="بررسی فنی تجهیزات"
+            loading="lazy">
+
+          <div class="service-content">
+            <h3>عیب‌یابی پکیج</h3>
+            <p>
+              بررسی مشکلات آب گرم، گرمایش و خطاهای
+              دستگاه برای تشخیص علت مشکل.
+            </p>
+            <a class="more" href="#contact">هماهنگی خدمات ←</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section brands" id="brands">
+    <div class="container">
+      <div class="section-heading">
+        <h2>برندهای پکیج</h2>
+        <p>
+          درباره امکان تعمیر برند دستگاه خود
+          با ما تماس بگیرید.
+        </p>
+      </div>
+
+      <div class="brand-list">
+        <div class="brand-item">ایران‌رادیاتور</div>
+        <div class="brand-item">بوتان</div>
+        <div class="brand-item">بوش</div>
+        <div class="brand-item">آریستون</div>
+        <div class="brand-item">سایر برندها</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container why-grid">
+      <img
+        class="why-image"
+        src="https://images/boiler.jpg"
+        alt="تکنسین در محیط کار فنی"
+        loading="lazy">
+
+      <div>
+        <h2>چرا پکیج‌یار پرند؟</h2>
+
+        <div class="why-list">
+          <p>✓ محدوده خدمات: پرند</p>
+          <p>✓ امکان هماهنگی تلفنی پیش از مراجعه</p>
+          <p>✓ بررسی مشکل پیش از اعلام هزینه نهایی</p>
+          <p>✓ ارتباط مستقیم با تعمیرکار</p>
+        </div>
+
+        <a class="btn btn-orange" href="tel:+989120636467">
+          تماس و هماهنگی
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>پکیج شما نیاز به بررسی دارد؟</h2>
+      <p>
+        برای هماهنگی خدمات تعمیر و سرویس پکیج در پرند تماس بگیرید.
+      </p>
+
+      <div class="actions" style="justify-content:center">
+        <a class="btn btn-orange" href="tel:+989120636467" dir="ltr" style="direction:ltr; unicode-bidi:isolate; display:inline-block;">>
+          ☎ 0912 063 6467
+        </a>
+
+        <a class="btn btn-navy"
+           style="border:1px solid white"
+           href="https://wa.me/989120636467"
+           target="_blank"
+           rel="noopener noreferrer">
+          پیام در واتساپ
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <strong>پکیج‌یار پرند</strong>
+    <br>
+    خدمات تعمیر و سرویس پکیج در پرند
+    <br>
+    تلفن:
+    <a href="tel:+989120636467" dir="ltr" style="direction:ltr; unicode-bidi:isolate; display:inline-block;">
+  09120636467
+</a>
+    <br>
+    © پکیج‌یار پرند
+  </div>
+</footer>
+
+</body>
+</html>
