@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="راهنمای آشنایی با قطعات پکیج دیواری و کدهای خطای رایج ایران رادیاتور، بوتان، آریستون، بوش و تاچی؛ عیب‌یابی اولیه ایمن در پرند و رباط‌کریم با پکیج‌یار پرند.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://parandpkg.ir/parts-guide.html">
+  <title>قطعات پکیج و کد خطاهای رایج | پکیج‌یار پرند</title>
+  <style>
+    :root{--navy:#10243a;--navy2:#183b59;--orange:#f28c28;--paper:#f5f7fa;--ink:#243447;--muted:#64748b;--line:#e1e7ee;--white:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:2}
+    a{color:inherit}
+    .top{background:linear-gradient(135deg,var(--navy),var(--navy2));color:white;padding:18px 16px}
+    .nav{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    .brand{font-size:1.2rem;font-weight:800;color:white;text-decoration:none}
+    .brand span{color:var(--orange)}
+    .navlinks{display:flex;gap:16px;flex-wrap:wrap;font-size:.92rem}
+    .navlinks a{text-decoration:none;color:#eef4fa}
+    .hero{background:var(--navy);color:white;padding:44px 16px 50px}
+    .hero-inner{max-width:1080px;margin:auto}
+    .eyebrow{color:#ffc17b;font-weight:bold;font-size:.9rem}
+    h1{font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.6;margin:8px 0 12px}
+    .hero p{max-width:780px;color:#e4edf5;margin:0 0 22px}
+    .btn{display:inline-block;background:var(--orange);color:#172b3d;text-decoration:none;font-weight:bold;padding:10px 18px;border-radius:9px;margin:4px 6px 4px 0}
+    .btn.alt{background:transparent;color:white;border:1px solid #9db1c4}
+    main{max-width:1080px;margin:28px auto;padding:0 16px}
+    .notice{background:#fff7e9;border:1px solid #ffd59e;border-right:5px solid var(--orange);padding:14px 18px;border-radius:10px;margin-bottom:24px}
+    .section{background:white;border:1px solid var(--line);border-radius:14px;padding:22px;margin:22px 0;box-shadow:0 5px 18px rgba(16,36,58,.04)}
+    h2{color:var(--navy);font-size:1.45rem;margin:0 0 12px}
+    h3{color:var(--navy2);font-size:1.12rem;margin:20px 0 8px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .part{border:1px solid var(--line);border-radius:11px;padding:14px;background:#fbfcfe}
+    .part h3{margin:0 0 5px}
+    .tag{display:inline-block;background:#fff0df;color:#8c4a00;border-radius:20px;padding:1px 9px;font-size:.8rem;font-weight:bold}
+    .table-wrap{overflow-x:auto;margin:12px 0 20px}
+    table{width:100%;border-collapse:collapse;min-width:650px;font-size:.92rem}
+    th,td{border:1px solid var(--line);padding:10px 12px;text-align:right;vertical-align:top}
+    th{background:var(--navy);color:white}
+    tr:nth-child(even) td{background:#f8fafc}
+    .safe{background:#eef8f1;border:1px solid #bfe4c9;border-radius:10px;padding:13px 16px}
+    .danger{background:#fff0ef;border:1px solid #f3c2bd;border-radius:10px;padding:13px 16px}
+    .searchbox{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:9px;font:inherit;margin:8px 0 14px}
+    .faq details{border-bottom:1px solid var(--line);padding:10px 0}
+    .faq summary{cursor:pointer;font-weight:bold;color:var(--navy)}
+    footer{background:var(--navy);color:#e7edf4;padding:28px 16px;margin-top:32px}
+    .foot-inner{max-width:1080px;margin:auto;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    footer a{color:#ffd09b}
+    .small{font-size:.88rem;color:var(--muted)}
+    @media(max-width:600px){.section{padding:16px}.hero{padding:30px 16px}.navlinks{gap:10px}}
+  </style>
+</head>
+<body>
+<header class="top">
+  <div class="nav">
+    <a class="brand" href="https://parandpkg.ir/">پکیج‌یار <span>پرند</span></a>
+    <nav class="navlinks" aria-label="منوی اصلی">
+      <a href="https://parandpkg.ir/">صفحه اصلی</a>
+      <a href="#parts">قطعات پکیج</a>
+      <a href="#errors">کدهای خطا</a>
+      <a href="#contact">تماس با ما</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">راهنمای آموزشی پکیج دیواری</div>
+    <h1>آشنایی با قطعات پکیج و کدهای خطای رایج</h1>
+    <p>در این راهنما با وظیفه قطعات مهم پکیج دیواری، نشانه‌های خرابی و تعدادی از کدهای خطای رایج برندهای مختلف آشنا می‌شوید. معنی دقیق کد به مدل و سری دستگاه بستگی دارد؛ بنابراین دفترچه همان مدل همیشه مرجع اصلی است.</p>
+    <a class="btn" href="https://wa.me/989120636467">ارسال پیام در واتس‌اپ</a>
+    <a class="btn alt" href="https://parandpkg.ir/">بازگشت به صفحه اصلی</a>
+  </div>
+</section>
+
+<main>
+  <div class="notice"><strong>نکته مهم:</strong> این صفحه برای شناخت اولیه و بررسی‌های ایمن است، نه تعمیر تخصصی. کدهای یک برند ممکن است بین مدل‌ها متفاوت باشند. قبل از هر اقدامی، نام کامل مدل و کد نمایش‌داده‌شده را یادداشت کنید و با دفترچه دستگاه تطبیق دهید.</div>
+
+  <section class="section" id="parts">
+    <h2>قطعات مهم پکیج دیواری چه کاری انجام می‌دهند؟</h2>
+    <div class="grid">
+      <article class="part"><h3>۱. پمپ سیرکولاسیون</h3><span class="tag">گردش آب</span><p>آب گرم را در مدار گرمایش به گردش درمی‌آورد. گرم نشدن یکنواخت رادیاتورها، صدای غیرعادی یا بالا رفتن سریع دما می‌تواند نیاز به بررسی گردش آب را نشان دهد.</p></article>
+      <article class="part"><h3>۲. شیر سه‌طرفه</h3><span class="tag">تغییر مسیر آب</span><p>در مدل‌های دارای این قطعه، مسیر آب را بین گرمایش رادیاتورها و آب گرم مصرفی تغییر می‌دهد. گرم نشدن مناسب یکی از دو بخش می‌تواند از علت‌های مختلفی باشد و به بررسی نیاز دارد.</p></article>
+      <article class="part"><h3>۳. مبدل حرارتی</h3><span class="tag">انتقال گرما</span><p>گرمای حاصل از احتراق را به آب منتقل می‌کند. رسوب یا گرفتگی می‌تواند بازده را کاهش دهد یا باعث نوسان دمای آب شود. رسوب‌زدایی باید متناسب با مدل و توسط فرد ماهر انجام شود.</p></article>
+      <article class="part"><h3>۴. منبع انبساط</h3><span class="tag">کنترل تغییر فشار</span><p>تغییر حجم آب در اثر گرم و سرد شدن را جبران می‌کند. بالا و پایین شدن زیاد فشار مدار یا افزایش فشار هنگام گرم شدن، می‌تواند نشانه نیاز به بررسی منبع انبساط یا بخش‌های دیگر باشد.</p></article>
+      <article class="part"><h3>۵. سنسور NTC</h3><span class="tag">اندازه‌گیری دما</span><p>دمای آب را به برد گزارش می‌دهد. نمایش دمای غیرعادی یا بعضی خطاهای سنسور می‌تواند به NTC، سیم‌کشی یا برد مربوط باشد؛ تشخیص قطعی با بررسی تخصصی است.</p></article>
+      <article class="part"><h3>۶. شیر اطمینان</h3><span class="tag">حفاظت از فشار</span><p>در شرایط مشخص، برای جلوگیری از افزایش بیش از حد فشار عمل می‌کند. اگر از آن آب خارج می‌شود، علت فشار بالا یا ایراد قطعه باید بررسی شود؛ خروجی آن را مسدود نکنید.</p></article>
+      <article class="part"><h3>۷. هواگیر اتوماتیک</h3><span class="tag">خروج هوا</span><p>به خروج هوای جمع‌شده از مدار کمک می‌کند. وجود هوا ممکن است باعث صدای رادیاتورها یا اختلال در گردش آب شود. نشتی یا خرابی هواگیر باید توسط تعمیرکار بررسی شود.</p></article>
+      <article class="part"><h3>۸. برد الکترونیکی</h3><span class="tag">کنترل دستگاه</span><p>عملکرد بخش‌های مختلف را مدیریت می‌کند و خطاها را نمایش می‌دهد. یک کد به‌تنهایی خرابی برد را ثابت نمی‌کند؛ ابتدا باید سنسورها، اتصالات و شرایط کاری بررسی شوند.</p></article>
+    </div>
+  </section>
+
+  <section class="section" id="errors">
+    <h2>کدهای خطای رایج پکیج بر اساس برند</h2>
+    <p>برای پیدا کردن کد، نام برند یا خود کد را در کادر زیر بنویسید. این جدول فقط چند نمونه رایج و راهنمای اولیه را نشان می‌دهد و فهرست کامل همه مدل‌ها نیست.</p>
+    <input class="searchbox" id="errorSearch" type="search" placeholder="جست‌وجو؛ مثلاً ایران رادیاتور، E01 یا افت فشار" aria-label="جست‌وجوی کد خطا">
+    <div class="table-wrap">
+      <table id="errorTable">
+        <thead><tr><th>برند / سری نمونه</th><th>کد</th><th>معنی احتمالی</th><th>اقدام اولیه ایمن</th></tr></thead>
+        <tbody>
+          <tr><td>ایران رادیاتور، دیجیتال برخی سری‌ها</td><td>E1</td><td>معمولاً افت فشار آب مدار گرمایش</td><td>فشار نمایشگر را با محدوده دفترچه مقایسه کنید. اگر نشتی یا افت مکرر فشار دارید، با تعمیرکار تماس بگیرید.</td></tr>
+          <tr><td>ایران رادیاتور، دیجیتال برخی سری‌ها</td><td>E2</td><td>معمولاً مشکل تشکیل یا تشخیص شعله</td><td>کد را یادداشت کنید؛ به شیر گاز، الکترود یا محفظه احتراق دست نزنید.</td></tr>
+          <tr><td>ایران رادیاتور، برخی مدل‌ها</td><td>E8 / E81</td><td>می‌تواند به افزایش دما یا عملکرد مدار ایمنی مربوط باشد</td><td>دستگاه را باز نکنید؛ اگر خطا تکرار می‌شود، بررسی پمپ و گردش آب را به متخصص بسپارید.</td></tr>
+          <tr><td>بوتان، برخی سری‌های پرلا / پرلا پرو / ورونا</td><td>E01</td><td>معمولاً تشکیل نشدن شعله</td><td>کد را ثبت کنید و فقط موارد مجاز در دفترچه را بررسی کنید؛ قطعات گاز و احتراق تخصصی‌اند.</td></tr>
+          <tr><td>بوتان، برخی سری‌های پرلا / پرلا پرو / ورونا</td><td>E03</td><td>در برخی مدل‌ها مربوط به مدار دود، فن یا پرشر دود</td><td>مسیر دودکش را از بیرون و بدون بازکردن دستگاه بررسی بصری کنید؛ دستگاه را در صورت خطر استفاده نکنید.</td></tr>
+          <tr><td>بوتان، برخی سری‌های پرلا / پرلا پرو / ورونا</td><td>E04</td><td>در برخی مدل‌ها افت فشار آب مدار</td><td>فشار را با دفترچه مقایسه کنید؛ اگر مرتب افت می‌کند، نشتی یا ایراد مدار باید بررسی شود.</td></tr>
+          <tr><td>آریستون، برخی مدل‌ها</td><td>108</td><td>معمولاً فشار ناکافی آب در مدار گرمایش</td><td>فشار را طبق دفترچه بررسی کنید؛ اگر نیاز به آب‌گیری مکرر دارید، علت را تعمیرکار پیدا کند.</td></tr>
+          <tr><td>آریستون، برخی مدل‌ها</td><td>501</td><td>معمولاً شعله تشکیل نشده است</td><td>به قطعات گاز و جرقه‌زن دست نزنید؛ کد و مدل را برای تعمیرکار ارسال کنید.</td></tr>
+          <tr><td>بوش، برخی مدل‌های یورومکس / کلاسیک</td><td>EA</td><td>در برخی مدل‌ها عدم تشکیل شعله</td><td>مدل دقیق را از پلاک دستگاه پیدا کنید؛ بررسی احتراق و گاز باید تخصصی باشد.</td></tr>
+          <tr><td>بوش، برخی مدل‌ها</td><td>E9</td><td>در برخی مدل‌ها عملکرد ترموستات حد یا افزایش بیش از حد دما</td><td>دستگاه را باز نکنید؛ در صورت تکرار، سرویس تخصصی لازم است.</td></tr>
+          <tr><td>تاچی، برخی سری‌ها</td><td>E4</td><td>در برخی سری‌ها افت فشار مدار گرمایش؛ در سری‌های دیگر ممکن است معنی متفاوتی داشته باشد</td><td>حتماً سری دستگاه را مشخص کنید و کد را با دفترچه همان مدل تطبیق دهید.</td></tr>
+          <tr><td>تاچی، برخی سری‌ها</td><td>E6 / E7</td><td>در بعضی مدل‌ها به سنسورهای دمای آب مربوط است</td><td>اتصالات و سنسورها را خودتان باز نکنید؛ برای بررسی تخصصی اقدام کنید.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">این جدول عمداً به چند کد نمونه محدود شده است؛ کدها را بدون بررسی مدل به همه دستگاه‌های یک برند تعمیم ندهید. منابع آموزشی آنلاین نیز ممکن است برای مدل‌های مختلف اطلاعات متفاوتی ارائه کنند.</p>
+  </section>
+
+  <section class="section">
+    <h2>برای رفع خطا چه کارهایی امن است؟</h2>
+    <div class="safe">
+      <ul>
+        <li>نام برند، مدل دقیق، کد خطا و زمان بروز آن را یادداشت کنید.</li>
+        <li>فشار نمایشگر را فقط با محدوده توصیه‌شده در دفترچه همان دستگاه مقایسه کنید.</li>
+        <li>اگر دفترچه اجازه داده، فقط یک بار از روش ریست همان مدل استفاده کنید؛ ریست مکرر راه‌حل خرابی نیست.</li>
+        <li>از صفحه نمایش و برچسب مدل عکس بگیرید تا برای تعمیرکار بفرستید.</li>
+      </ul>
+    </div>
+    <div class="danger" style="margin-top:14px"><strong>هشدار ایمنی:</strong> اگر بوی گاز حس می‌کنید، کلید برق یا شعله‌ای را روشن و خاموش نکنید؛ از محل خارج شوید و از جای امن با امداد گاز تماس بگیرید. اگر بوی دود، علائم احتمالی مسمومیت با مونوکسیدکربن یا مشکل دودکش وجود دارد، دستگاه را استفاده نکنید و فوراً از محیط خارج شوید. درپوش دستگاه را باز نکنید و به سیم‌کشی، شیر گاز یا قطعات احتراق دست نزنید.</div>
+  </section>
+
+  <section class="section faq">
+    <h2>پرسش‌های متداول</h2>
+    <details><summary>آیا یک کد در همه مدل‌های یک برند معنی یکسان دارد؟</summary><p>خیر. معنی کد می‌تواند بر اساس سری، مدل و سال ساخت فرق کند. مدل دقیق و دفترچه دستگاه اهمیت زیادی دارند.</p></details>
+    <details><summary>اگر فشار پکیج مرتب پایین می‌آید چه کنم؟</summary><p>فشار را طبق دفترچه بررسی کنید، اما آب‌گیری مکرر بدون پیدا کردن علت توصیه نمی‌شود. نشتی، منبع انبساط و اجزای مدار ممکن است نیاز به بررسی داشته باشند.</p></details>
+    <details><summary>آیا با ریست کردن، هر خطایی رفع می‌شود؟</summary><p>خیر. ریست فقط ممکن است خطای موقت را پاک کند. اگر علت اصلی باقی باشد، خطا دوباره ظاهر می‌شود؛ ریست‌های پی‌درپی انجام ندهید.</p></details>
+    <details><summary>برای راهنمایی دقیق چه اطلاعاتی لازم است؟</summary><p>برند، مدل دقیق دستگاه، کد خطا و عکس نمایشگر کمک می‌کند راهنمایی اولیه دقیق‌تر باشد؛ تشخیص نهایی ممکن است به بررسی حضوری نیاز داشته باشد.</p></details>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>برای تعمیر پکیج در پرند و رباط‌کریم</h2>
+    <p>اگر خطا برطرف نمی‌شود یا نیاز به بررسی تخصصی دارید، برای هماهنگی تعمیر و سرویس پکیج با پکیج‌یار پرند تماس بگیرید.</p>
+    <a class="btn" href="tel:09120636467">تماس: ۰۹۱۲۰۶۳۶۴۶۷</a>
+    <a class="btn" href="https://wa.me/989120636467">ارسال عکس کد خطا در واتس‌اپ</a>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <div><strong>پکیج‌یار پرند</strong><br>تعمیر و سرویس پکیج در پرند و رباط‌کریم</div>
+    <div><a href="https://parandpkg.ir/">صفحه اصلی</a> · <a href="tel:09120636467">۰۹۱۲۰۶۳۶۴۶۷</a> · <a href="https://wa.me/989120636467">واتس‌اپ</a></div>
+  </div>
+</footer>
+<script>
+  const search = document.getElementById('errorSearch');
+  const rows = Array.from(document.querySelectorAll('#errorTable tbody tr'));
+  search.addEventListener('input', function () {
+    const q = this.value.trim().toLowerCase();
+    rows.forEach(row => row.style.display = row.innerText.toLowerCase().includes(q) ? '' : 'none');
+  });
+</script>
+</body>
+</html>
